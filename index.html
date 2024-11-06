@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Racing Management</title>
+    <link rel="stylesheet" href="main.css">    
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <nav>
+            <a href="#" onclick="loadTabContent('drivers')">Drivers</a>
+            <a href="#" onclick="loadTabContent('cars')">Cars</a>
+            <a href="#" onclick="loadTabContent('tracks')">Tracks</a>
+            <a href="#" onclick="loadTabContent('races')">Races</a>
+            <a href="#" onclick="loadTabContent('trackScraper')">Track Scraper</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="container" id="content">
+        <h2>Welcome! Select a tab to view or manage data.</h2>
+    </div>
+
+    <!-- Script files -->
+    <script src="script.js"></script>
+    <script src="driver.js"></script>
+    <script src="car.js"></script>
+    <script src="track.js"></script>
+    <script src="race.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* Header navigation styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container styling for content */
+.container {
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Styling for input, button, and table */
+#base-url {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+/* General styling for input fields */
+input[type="text"],
+input[type="number"] {
+    padding: 10px;             /* Space inside the input */
+    margin-bottom: 10px;       /* Space below each input */
+    font-size: 1rem;           /* Make text a bit larger */
+    border: 1px solid #ccc;    /* Light gray border */
+    border-radius: 4px;        /* Rounded corners */
+    box-sizing: border-box;    /* Ensure padding doesn’t affect width */
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #007bff;     /* Change border to blue when focused */
+    outline: none;             /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Light blue shadow */
+}
+
+/* Notification styling */
+.notification {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+}
+
+.notification.show {
+    opacity: 1;
+}
+
+.notification.hidden {
+    display: none;
+}
+
+.notification.success {
+    background-color: #28a745;
+}
+
+.notification.error {
+    background-color: #dc3545;
+}
